@@ -60,7 +60,7 @@ void enterCommandTwo() {
 }
 
 void enterCommandThree() {
-  static String command_one = "flashrom --wp-status"; // Setting as static to help load into memory sooner
+  static String command_three = "flashrom --wp-status"; // Setting as static to help load into memory sooner
   wait(2);
   // Using following line to compare performance of Keyboard.println() vs Keyboard.print()
   // Uncomment the following line to change to Keyboard.println()
