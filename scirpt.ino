@@ -22,7 +22,7 @@ void setup() {
 void loop() {
   if (running) { //Using this boolean to stop the loop from restarting
     // Add more command functions towards bottom or program and call them from this function
-    wait(5)
+    wait(5);
     enterCommandOne(); // Call function
     wait(5);
     enterCommandTwo(); // Call function
