@@ -14,7 +14,8 @@ Currently written with Linux workstation in mind.</p>
 <li>Plug centipede into chromebook and let it run its commands.
 
 <h1><b>Notes:</b></h1>
-<p>Currently if you change the void loop() to an int main() it will lock up the centipede.  I have not yet discovered if it is hard bricked locked up.</P>
+<p>Currently if you change the void loop() to an int main() it will lock up the centipede.  I have not yet discovered if it is hard bricked locked up.</p>
+<p>Used flashrom --wp-status and flashroom --wp-disable as a test of commands.  Replace with the actual desired commands.
 
 <h2><b>Issues</b></h2>
 <li>The Keyboard.print(), Keyboard.println(), Keyboard.press() functions sometimes do not return the full string or list of characters. Still looking at why.
