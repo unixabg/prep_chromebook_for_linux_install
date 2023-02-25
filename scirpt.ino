@@ -46,7 +46,7 @@ void enterCommandOne() {
   }
   */
   // Comment to change function to the Keyboard.press() function above
-  Keyboard.print(command_one); //Print string
+  Keyboard.println(command_one); //Print string
   wait(5);
   //Keyboard.write(KEY_ENTER); // Press Enter
 }
@@ -54,7 +54,7 @@ void enterCommandOne() {
 void enterCommandTwo() {
   static String command_two = "flashrom --wp-disable"; // Setting as static to help load into memory sooner
   wait(2);
-  Keyboard.print(command_two);
+  Keyboard.println(command_two);
   wait(5);
   //Keyboard.write(KEY_ENTER); // Press Enter
 }
@@ -68,7 +68,7 @@ void enterCommandThree() {
   //Keyboard.println(command_three);
   
   // Comment to following to turn off Keyboard.print()
-  Keyboard.print(command_three);
+  Keyboard.println(command_three);
   wait(5);
   //Keyboard.write(KEY_ENTER); // Press Enter
 }
