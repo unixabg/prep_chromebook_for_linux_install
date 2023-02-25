@@ -35,17 +35,18 @@ void loop() {
 
 // Using this function to compare performace between Keyboard.press() using the string like a list of characters
 // and using the Keyboard.print() function
-// Uncomment Keyboard.print(command_one); to change back.
 void enterCommandOne() {
   static String command_one = "flashrom --wp-status"; // Setting as static to help load into memory sooner
   wait(2);
-  //Comment out the next 4 lines to turn off Keyboard.press()
+  //Uncomment the next 4 lines to try Keyboard.press()
+  /*
   for(int i = 0; i < command_one.length(); i++) {
     Keyboard.press(command_one[i]);
     Keyboard.releaseAll();
   }
-  // Uncomment to change function back
-  //Keyboard.print(command_one); //Print string
+  */
+  // Comment to change function to the Keyboard.press() function above
+  Keyboard.print(command_one); //Print string
   wait(5);
   Keyboard.write(KEY_ENTER); // Press Enter
 }
@@ -63,7 +64,9 @@ void enterCommandThree() {
   wait(2);
   // Using following line to compare performance of Keyboard.println() vs Keyboard.print()
   // Uncomment the following line to change to Keyboard.println()
+  
   //Keyboard.println(command_three);
+  
   // Comment to following to turn off Keyboard.print()
   Keyboard.print(command_three)
   wait(5);
