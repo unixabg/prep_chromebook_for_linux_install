@@ -48,7 +48,7 @@ void enterCommandOne() {
   // Comment to change function to the Keyboard.press() function above
   Keyboard.print(command_one); //Print string
   wait(5);
-  Keyboard.write(KEY_ENTER); // Press Enter
+  //Keyboard.write(KEY_ENTER); // Press Enter
 }
 
 void enterCommandTwo() {
@@ -56,7 +56,7 @@ void enterCommandTwo() {
   wait(2);
   Keyboard.print(command_two);
   wait(5);
-  Keyboard.write(KEY_ENTER); // Press Enter
+  //Keyboard.write(KEY_ENTER); // Press Enter
 }
 
 void enterCommandThree() {
@@ -70,7 +70,7 @@ void enterCommandThree() {
   // Comment to following to turn off Keyboard.print()
   Keyboard.print(command_three);
   wait(5);
-  Keyboard.write(KEY_ENTER); // Press Enter
+  //Keyboard.write(KEY_ENTER); // Press Enter
 }
 
 void setPrescaler() {
