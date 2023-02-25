@@ -68,7 +68,7 @@ void enterCommandThree() {
   //Keyboard.println(command_three);
   
   // Comment to following to turn off Keyboard.print()
-  Keyboard.print(command_three)
+  Keyboard.print(command_three);
   wait(5);
   Keyboard.write(KEY_ENTER); // Press Enter
 }
@@ -107,5 +107,6 @@ void wait(int cycles) {
     blink();
     if (slowMode) {
       delay(250);
+    }
   }
 }
