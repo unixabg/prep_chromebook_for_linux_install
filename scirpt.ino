@@ -63,9 +63,9 @@ void enterCommandThree() {
   static String command_three = "flashrom --wp-status"; // Setting as static to help load into memory sooner
   wait(2);
   // Using following line to compare performance of Keyboard.println() vs Keyboard.print()
-  // Uncomment the following line to change to Keyboard.println()
+  // Uncomment the following line to change to Keyboard.print()
   
-  //Keyboard.println(command_three);
+  //Keyboard.print(command_three);
   
   // Comment to following to turn off Keyboard.print()
   Keyboard.println(command_three);
