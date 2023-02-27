@@ -35,7 +35,7 @@ void enterCommandOne() {
   static String command_one = "flashrom --wp-status"; // Setting as static to help load into memory sooner
   //Uncomment the next 4 lines to try Keyboard.press()
   for(int i = 0; i < command_one.length(); i++) {
-    wait(1);
+    delay(50);
     Keyboard.press(command_one[i]);
     Keyboard.releaseAll();
   }
@@ -45,7 +45,7 @@ void enterCommandOne() {
 void enterCommandTwo() {
   static String command_two = "flashrom --wp-disable"; // Setting as static to help load into memory sooner
   for(int i = 0; i < command_two.length(); i++) {
-    wait(1);
+    delay(50);
     Keyboard.press(command_two[i]);
     Keyboard.releaseAll();
   }
@@ -55,7 +55,7 @@ void enterCommandTwo() {
 void enterCommandThree() {
   static String command_three = "flashrom --wp-status"; // Setting as static to help load into memory sooner
   for(int i = 0; i < command_three.length(); i++) {
-    wait(1);
+    delay(50);
     Keyboard.press(command_three[i]);
     Keyboard.releaseAll();
   }
