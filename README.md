@@ -18,4 +18,5 @@ Currently written with Linux workstation in mind.</p>
 <p>Used <code>$: flashrom --wp-status</code> and <code>$: flashrom --wp-disable</code> as a test of commands.  Replace with the actual desired commands.
 
 <h2><b>Issues</b></h2>
-<li>The Keyboard.print(), Keyboard.println(), Keyboard.press() functions sometimes do not return the full string or list of characters of the complete command. Still looking at why.
+<li><s>The Keyboard.print(), Keyboard.println(), Keyboard.press() functions sometimes do not return the full string or list of characters of the complete command. Still looking at why.</s></br>
+ISSUE SOLVED.  The issue was solved using the Keyboard.press() function then using delay to make each press 50ms rather than using a wait() call.
