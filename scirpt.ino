@@ -33,8 +33,8 @@ void loop() {
   running = false;
 }
 
-void runCommand(command) {
-  for int(i = 0; i < command.length(); i++) {
+void runCommand(String command) {
+  for (int i = 0; i < command.length(); i++) {
     delay(50);
     Keyboard.press(command[i]);
     Keyboard.releaseAll();
