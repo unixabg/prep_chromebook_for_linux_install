@@ -7,7 +7,7 @@ For use on chromebook in developer mode escalated as root.
 
 #define slowMode 0 // [0,1] Set to 1 if Centipede appears to be moving too quickly at any screen. This will slow down the entire process
 // Special Characters Definition
-#define KEY_ENTER     0xB0
+#define KEY_ENTER 0xB0
 
 //Add your command variables below
 Static string command_one = "flashrom --wp-status";
@@ -33,8 +33,8 @@ void loop() {
   running = false;
 }
 
-void runCommand(command){
-  for int(i=0; i < command.length(); i++) {
+void runCommand(command) {
+  for int(i = 0; i < command.length(); i++) {
     delay(50);
     Keyboard.press(command[i]);
     Keyboard.releaseAll();
@@ -43,7 +43,7 @@ void runCommand(command){
 }
 
 void setPrescaler() {
-    //Disable interrupts.
+  //Disable interrupts.
   uint8_t oldSREG = SREG;
   cli();
 
@@ -68,7 +68,6 @@ void blink() {
   //  TXLED0;
   delay(250);
 }
-
 
 // Defines wait()
 void wait(int cycles) {
