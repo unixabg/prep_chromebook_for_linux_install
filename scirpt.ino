@@ -25,7 +25,7 @@ void setup() {
 
 void loop() {
   if (running) { //Using this boolean to stop the loop from restarting
-    // Add more runCommand function calls with your variable (added above) as a parameter 
+    // Add more runCommand function calls with your variable (added above) as a parameter
     runCommand(command_one);
     runCommand(command_two);
     runCommand(command_one);
@@ -42,7 +42,7 @@ void runCommand(String command) {
   Keyboard.write(KEY_ENTER);
 }
 
-// This function sets the clock of the arduino board 
+// This function sets the clock of the arduino board
 void setPrescaler() {
   //Disable interrupts.
   uint8_t oldSREG = SREG;
