@@ -15,6 +15,8 @@ Currently written with Linux workstation in mind.</p>
 
 <h1><b>Notes:</b></h1>
 <p>Currently if you change the void loop() to an int main() it will lock up the centipede.  I have not yet discovered if it is hard bricked or just locked up.</p>
+<li>The board was locked up, the steps to correct the issue and rescue the board were found <a href="https://learn.sparkfun.com/tutorials/pro-micro--fio-v3-hookup-guide/troubleshooting-and-faq#ts-revive
+">Here</a>. 
 <p>Used <code>$: flashrom --wp-status</code> and <code>$: flashrom --wp-disable</code> as a test of commands.  Replace with the actual desired commands.
 
 <h2><b>Issues</b></h2>
