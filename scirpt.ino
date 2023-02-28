@@ -34,9 +34,9 @@ void loop() {
 }
 
 void runCommand(command){
-  for int(i=0; i < command.length(); i++){
-    delay(50)
-    Keyboard.press(command[i])
+  for int(i=0; i < command.length(); i++) {
+    delay(50);
+    Keyboard.press(command[i]);
     Keyboard.releaseAll();
   }
   Keyboard.write(KEY_ENTER);
