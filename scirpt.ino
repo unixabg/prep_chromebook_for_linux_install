@@ -42,6 +42,7 @@ void runCommand(command) {
   Keyboard.write(KEY_ENTER);
 }
 
+// This function sets the clock of the arduino board 
 void setPrescaler() {
   //Disable interrupts.
   uint8_t oldSREG = SREG;
