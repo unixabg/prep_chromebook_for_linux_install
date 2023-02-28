@@ -10,8 +10,8 @@ For use on chromebook in developer mode escalated as root.
 #define KEY_ENTER 0xB0
 
 //Add your command variables below
-Static string command_one = "flashrom --wp-status";
-Static string command_two = "flashrom --wp-disable";
+static String command_one = "flashrom --wp-status";
+static String command_two = "flashrom --wp-disable";
 
 int RXLED = 17;
 static uint8_t __clock_prescaler = (CLKPR & (_BV(CLKPS0) | _BV(CLKPS1) | _BV(CLKPS2) | _BV(CLKPS3)));
