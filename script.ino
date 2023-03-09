@@ -96,7 +96,7 @@ static String command_two = "sudo -i";
 static String command_three = "cd /tmp";
 static String command_four = "flashrom --wp-status";
 static String command_five = "flashrom --wp-disable";
-static String command_six = "flashrom -r bios.bin";
+//static String command_six = "flashrom -r bios.bin";
 static String command_seven = "/usr/share/vboot/bin/set_gbb_flags.sh 0x19";
 static String command_eight = "flashrom --wp-enable --wp-range 0x00000000 0x00200000";
 //static String command_nine = "flashrom --wp-enable";
@@ -119,14 +119,14 @@ void loop() {
     Keyboard.press(KEY_LEFT_ALT);
     Keyboard.press(KEY_F3);
     Keyboard.releaseAll();
-    wait(5); //Wait for the terminal to appear loading
+    wait(3); //Wait for the terminal to appear loading
     // Add more runCommand function calls with your variable (added above) as a parameter
     runCommand(command_one);
     runCommand(command_two);
     runCommand(command_three);
     runCommand(command_four);
     runCommand(command_five);
-    runCommand(command_six);
+    //runCommand(command_six);
     runCommand(command_seven);
     runCommand(command_eight);
 //    runCommand(command_nine);
